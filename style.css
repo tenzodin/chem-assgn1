@@ -1,0 +1,135 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 1rem;
+}
+
+/* Introduction section styling */
+#introduction {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Topics section styling */
+#topics article {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#topics h3 {
+    color: #007bff;
+}
+
+#topics p {
+    margin-bottom: 0.5rem;
+}
+
+#topics a {
+    display: inline-block;
+    text-decoration: none;
+    background: #007bff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#topics a:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive design for navigation */
+@media (max-width: 600px) {
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* ... (previous styles) */
+
+html, body {
+    height: 100%;
+}
+
+/* Sticky footer styles */
+.content {
+    min-height: calc(100vh - 40px); /* Adjust 40px to the actual height of your footer */
+    /* Flexbox setup */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    /* ... (existing footer styles) */
+}
+
+/* ... (additional styles) */
