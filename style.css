@@ -163,3 +163,108 @@ footer p {
     border-radius: 10px; /* Softens the corners */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adds a subtle shadow */
 }
+/* Ensure the rest of your styles are unchanged */
+
+
+html {
+    height: 100%; /* Full height */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 5px; /* Remove default margin */
+}
+
+.content {
+    flex: 1; /* Allows content to expand and push the footer down */
+}
+
+footer {
+    /* Your existing footer styles */
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* Base styles remain the same */
+
+/* Hamburger and close icon base styles */
+.hamburger, .close {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Updated to adjust display in the media query */
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        z-index: 3; /* Ensures visibility above the nav menu */
+    }
+
+    .close {
+        display: none; /* Initially hidden */
+        position: fixed; /* Stays in place while scrolling */
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        z-index: 3; /* Above the nav for easy access */
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; /* 100% of the viewport width */
+        height: 100vh; /* 100% of the viewport height */
+        background-color: rgba(0,0,0,0.9); /* Semi-transparent background */
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%); /* Positioned off-screen to the left */
+        transition: transform 0.3s ease;
+        z-index: 2; /* Below the close icon but above page content */
+    }
+
+    nav.open {
+        transform: translateX(0); /* Moves into view when open */
+        display: flex; /* Display as flex to center content */
+    }
+
+    nav ul {
+        width: 100%; /* Take the full width of nav */
+        list-style: none; /* No bullets */
+        padding: 0;
+        margin: 0;
+        text-align: center; /* Center-align the list items */
+    }
+
+    nav ul li {
+        padding: 15px 0; /* Add more padding for tap targets */
+    }
+
+    nav a {
+        font-size: 1.5rem; /* Increase font size for readability */
+        color: white; /* Font color */
+        display: block; /* Each link is a block for better tap target */
+        text-decoration: none; /* No underline */
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    nav a:hover, nav a:focus {
+        color: #a1c4fd; /* Highlight color on hover/focus */
+    }
+
+    /* Optional: Add a background fade-in effect */
+    nav.open {
+        animation: fadeIn 0.5s;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+}
+

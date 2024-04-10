@@ -9,6 +9,7 @@
 <body>
     <div class="content"> <!-- Start of .content div -->
         <header>
+  
             <h1><a href="./index.html">SCH4U</a></h1>
             <nav>
                 <ul>
@@ -69,5 +70,20 @@
         <p>&copy; 2024 Tenzing Woser</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const closeIcon = document.querySelector('.close');
+            const nav = document.querySelector('nav');
+
+            hamburger.addEventListener('click', function () {
+                nav.classList.add('open');
+            });
+
+            closeIcon.addEventListener('click', function () {
+                nav.classList.remove('open');
+            });
+        });
+    </script>
 </body>
 </html>
