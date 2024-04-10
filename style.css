@@ -154,3 +154,12 @@ footer p {
     margin-bottom: 20px;
 }
 
+.index-banner {
+    width: 100%; /* Adjust based on preference */
+    max-width: 800px; /* Limits the size but make it responsive */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Adds spacing and centers image */
+    border-radius: 10px; /* Softens the corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+}
