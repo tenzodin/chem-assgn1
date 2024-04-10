@@ -6,6 +6,10 @@ Welcome to the Chemistry Resource Website repository! This project aims to provi
 
 The Chemistry Resource Website is a web-based platform designed to offer educational materials, articles, and resources covering different branches of chemistry, including organic chemistry, structure and properties of matter, energy changes and rates of reactions, chemical systems and equilibrium, and electrochemistry. The content is curated to align with the SCH4U chemistry curriculum, making it an excellent supplementary resource for students and educators alike.
 
+## Demo
+
+https://tenzodin.github.io/chem-assgn1/index.html
+
 ## Features
 
 - **Navigation Menu:** Easily navigate through different chapters/topics with the intuitive navigation menu located at the top of the webpage.
