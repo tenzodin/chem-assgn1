@@ -133,3 +133,14 @@ footer {
 }
 
 /* ... (additional styles) */
+
+h1 > a:hover {
+    color: white; /* Sets the text color to white on hover */
+}
+
+h1 > a, h1 > a:hover {
+    color: white; /* Ensures the text color remains white at all times */
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+
